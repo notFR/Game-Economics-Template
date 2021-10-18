@@ -24,6 +24,9 @@ namespace TD.gameeconomics
 		[Space(10)] 
 		[SerializeField] private Button leaderboardButton;
 		[SerializeField] private Button leaderboardBackButton;
+		[Space(10)] 
+		[SerializeField] private Button missionsButton;
+		[SerializeField] private Button missionsBackButton;
 		
 		[Header("Player Info :")] 
 		[SerializeField] private TMP_Text playerUserName;
@@ -34,7 +37,7 @@ namespace TD.gameeconomics
 
 
 		private const string leaderboardPanel = "LeaderBoard Panel";
-		
+		private const string missionsPanel = "Missions";
 		
 
 		#endregion
@@ -92,7 +95,7 @@ namespace TD.gameeconomics
 				inventoryCanvas.SetActive(false);
 			});
 			
-			
+			// Leaderboard
 			leaderboardButton.onClick.RemoveAllListeners();
 			leaderboardButton.onClick.AddListener(() =>
 			{
@@ -105,6 +108,17 @@ namespace TD.gameeconomics
 				CloseMenu(leaderboardPanel);
 			});
 			
+			// Missions
+			missionsButton.onClick.RemoveAllListeners();
+			missionsButton.onClick.AddListener(() =>
+			{
+				ShowMenu(missionsPanel);
+			});
+			missionsBackButton.onClick.RemoveAllListeners();
+			missionsBackButton.onClick.AddListener(() =>
+			{
+				CloseMenu(missionsPanel);
+			});
 		}
 		
 		#region UI MANAGEMENT

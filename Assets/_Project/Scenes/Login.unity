@@ -893,7 +893,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194596087}
-  - component: {fileID: 194596086}
   m_Layer: 5
   m_Name: Register
   m_TagString: Untagged
@@ -901,20 +900,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &194596086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 194596085}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a00128818eda43dfaa959b83527b255, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  otherPanels:
-  - {fileID: 0}
 --- !u!224 &194596087
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1634,7 +1619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943af5566c49cc4db562b42052172b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearPlayerPrefs: 0
+  clearPlayerPrefs: 1
   loginEmailButton: {fileID: 801902183}
   errorOKButton: {fileID: 943059084}
   LoginButton: {fileID: 144941579}
@@ -3096,6 +3081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bfd80f6b0b07f246be98acc00ef6022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _authenticationType: 0
 --- !u!4 &902823378
 Transform:
   m_ObjectHideFlags: 0

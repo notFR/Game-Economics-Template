@@ -30,8 +30,7 @@ public enum Authtypes
 public class PlayFabAuthService  {
 
     //Events to subscribe to for this service
-    public delegate void DisplayAuthenticationEvent();
-    public static event DisplayAuthenticationEvent OnDisplayAuthentication;
+
 
     public delegate void LoginSuccessEvent(LoginResult success);
     public static event LoginSuccessEvent OnLoginSuccess;
@@ -144,10 +143,10 @@ public class PlayFabAuthService  {
         switch (authType)
         {
             case Authtypes.None:
-                if (OnDisplayAuthentication != null)
-                {
-                    OnDisplayAuthentication.Invoke();
-                }
+                // if (OnDisplayAuthentication != null)
+                // {
+                //     OnDisplayAuthentication.Invoke();
+                // }
                 break;
 
             case Authtypes.Silent:
@@ -218,7 +217,7 @@ public class PlayFabAuthService  {
         //a good catch: If username & password is empty, then do not continue, and Call back to Authentication UI Display 
         if (!RememberMe && string.IsNullOrEmpty(Email) && string.IsNullOrEmpty(Password))
         {
-            OnDisplayAuthentication.Invoke();
+            //OnDisplayAuthentication.Invoke();
             return;
         }
 

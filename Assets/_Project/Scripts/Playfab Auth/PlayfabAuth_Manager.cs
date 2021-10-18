@@ -144,7 +144,8 @@ namespace TD.gameeconomics
 			{
 				SO_DataController.Singleton._authenticationType = AuthenticationType.PlayfabServer;
 			}
-			
+
+			Debug.Log("Log In Success");
 			ShowMenu(loadingPanel);
 			this.Wait(0.5f, () => { ShowMenu(startGame); });
 			var request = new GetAccountInfoRequest();
@@ -160,15 +161,17 @@ namespace TD.gameeconomics
 					Debug.LogError(error.GenerateErrorReport());
 				});
 			
-			var req = new UpdateUserTitleDisplayNameRequest
+			if (_AuthService.Username != null)
 			{
-				DisplayName = PlayerPrefs.GetString(GlobalData.playerUsername),
+				var req = new UpdateUserTitleDisplayNameRequest 
+				{
+					DisplayName = _AuthService.Username,
+				}; 
+				PlayFabClientAPI.UpdateUserTitleDisplayName(req, OnDisplayNameUpdated, error =>
+				{
+					Debug.LogError(error.GenerateErrorReport());
+				});
 			}
-			;
-			PlayFabClientAPI.UpdateUserTitleDisplayName(req, OnDisplayNameUpdated, error =>
-			{
-				Debug.LogError(error.GenerateErrorReport());
-			});
 
 		}
 
@@ -229,6 +232,8 @@ namespace TD.gameeconomics
 			_AuthService.Username = username.text;
 			_AuthService.Password = password.text;
 			_AuthService.Authenticate(Authtypes.RegisterPlayFabAccount);
+			
+			
 		}
 		
 		private void OnCancelRegisterButtonClicked()
