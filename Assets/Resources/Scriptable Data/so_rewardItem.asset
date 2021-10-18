@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37578291e20933f40b743a2e3af4363c, type: 3}
+  m_Name: so_rewardItem
+  m_EditorClassIdentifier: 
+  XPItem: {fileID: 5425287811491490590, guid: af996a34f64832a4daf41c31357cd219, type: 3}
+  coinItem: {fileID: 8146941536736172359, guid: 18931d6a67f6ce943a35c4eb108f99b9, type: 3}
+  chestItem: {fileID: 4691612545655500868, guid: 52ecde7b33edcb24db86170fd659ff6d, type: 3}
+  winRewardsData:
+  - level: 0
+    rewardCount: 3
+    reward:
+    - Id: 0
+      isClaimed: 0
+      XPVal: 20
+      coinVal: 100
+      chestType: 2
+      so_inventoryObj: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - Id: 1
+      isClaimed: 0
+      XPVal: 30
+      coinVal: 150
+      chestType: 2
+      so_inventoryObj: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+  - level: 1
+    rewardCount: 0
+    reward:
+    - Id: 0
+      isClaimed: 0
+      XPVal: 30
+      coinVal: 150
+      chestType: 2
+      so_inventoryObj: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - Id: 1
+      isClaimed: 0
+      XPVal: 35
+      coinVal: 160
+      chestType: 2
+      so_inventoryObj: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - Id: 2
+      isClaimed: 0
+      XPVal: 40
+      coinVal: 200
+      chestType: 2
+      so_inventoryObj: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+  - level: 2
+    rewardCount: 0
+    reward: []
+  - level: 3
+    rewardCount: 0
+    reward: []
+  - level: 4
+    rewardCount: 0
+    reward: []
+  - level: 5
+    rewardCount: 0
+    reward: []
+  - level: 6
+    rewardCount: 0
+    reward: []
+  - level: 7
+    rewardCount: 0
+    reward: []
+  - level: 8
+    rewardCount: 0
+    reward: []
+  - level: 9
+    rewardCount: 0
+    reward: []

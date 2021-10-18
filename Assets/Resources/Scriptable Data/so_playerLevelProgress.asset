@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40ac6fb7859fd964fb194b801df1c89d, type: 3}
+  m_Name: so_playerLevelProgress
+  m_EditorClassIdentifier: 
+  playerProgressData:
+  - Id: 1
+    playerLevel: 1
+    levelTargetXP: 50
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 2
+    playerLevel: 2
+    levelTargetXP: 80
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 3
+    playerLevel: 3
+    levelTargetXP: 140
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 4
+    playerLevel: 4
+    levelTargetXP: 200
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 5
+    playerLevel: 5
+    levelTargetXP: 400
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 6
+    playerLevel: 6
+    levelTargetXP: 800
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 7
+    playerLevel: 7
+    levelTargetXP: 1000
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 8
+    playerLevel: 8
+    levelTargetXP: 1200
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 9
+    playerLevel: 9
+    levelTargetXP: 1600
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 10
+    playerLevel: 10
+    levelTargetXP: 2200
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 11
+    playerLevel: 11
+    levelTargetXP: 2500
+    levelCurrentXP: 0
+    levelBonusCount: 3
+  - Id: 12
+    playerLevel: 12
+    levelTargetXP: 3000
+    levelCurrentXP: 0
+    levelBonusCount: 3
