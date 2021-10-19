@@ -12,6 +12,7 @@ namespace TD.gameeconomics
 		
 		void Awake()
 		{
+			OnAwake();
 			if (Singleton == null)
 			{
 				Singleton = this;
@@ -47,12 +48,20 @@ namespace TD.gameeconomics
 		// Inventory
 		private SO_InventorySlotObject inventorySystem = null;
 		public SO_InventorySlotObject InventorySystem => inventorySystem;
-
+		
+		//Mission
+		private SO_ChallangeMission challangeMission_so;
+		public SO_ChallangeMission ChallangeMissionData => challangeMission_so;
+		
+		
 		#endregion
 
 		#region Functions
 
-		
+		void OnAwake()
+		{
+			
+		}
 
 		private void Start()
 		{
@@ -72,6 +81,10 @@ namespace TD.gameeconomics
 		{
 			so_palyerProgress = Resources.Load<SO_PlayerLevelProgress>("Scriptable Data/so_playerLevelProgress");
 			so_rewardItem = Resources.Load<SO_RewardItem>("Scriptable Data/so_rewardItem");
+			if (challangeMission_so == null)
+			{
+				challangeMission_so = Resources.Load<SO_ChallangeMission>("Scriptable Data/Mission/so_ChallangeMission");
+			}
 			
 			if (inventorySystem == null)
 			{

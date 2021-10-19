@@ -6,10 +6,15 @@ namespace TD
     public class UI_MissionsTabGroup : MonoBehaviour
     {
         #region Variable
-
-        [SerializeField] private List<UI_MissionsTabButton> tabButtons;
-
+        
         [SerializeField] private Color defaultColor;
+        [Space(15)] 
+        [SerializeField] private List<GameObject> objToSwap;
+        
+        
+        
+        private List<UI_MissionsTabButton> tabButtons;
+        private UI_MissionsTabButton selectedTab;
 
         #endregion
 
@@ -38,8 +43,25 @@ namespace TD
         {
             ResetTabs();
             ResetHighlight();
+
+            selectedTab = button;
+            
             button.gameObject.transform.GetChild(0).gameObject.SetActive(true);
             button.backgroundText.color = Color.white;
+
+            int index = button.transform.GetSiblingIndex();
+            for (int i = 0; i < objToSwap.Count; i++)
+            {
+                if (i == index)
+                {
+                    objToSwap[i].SetActive(true);
+                }
+                else
+                {
+                    objToSwap[i].SetActive(false);
+                }
+            }
+
         }
 
         public void ResetTabs()
