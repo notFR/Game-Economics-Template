@@ -11839,7 +11839,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &86336274
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16777,6 +16777,7 @@ GameObject:
   - component: {fileID: 268240961}
   - component: {fileID: 268240963}
   - component: {fileID: 268240962}
+  - component: {fileID: 268240964}
   m_Layer: 5
   m_Name: List1
   m_TagString: Untagged
@@ -16849,6 +16850,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 268240960}
   m_CullTransparentMesh: 0
+--- !u!114 &268240964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 268240960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27278fd3500d3540bb4489c33a55ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
+  claimButton: {fileID: 1414765674}
+  claimedBanner: {fileID: 1306050598}
+  _missionRewardType: 0
+  _rewardType: 0
 --- !u!1 &274529064
 GameObject:
   m_ObjectHideFlags: 0
@@ -17290,7 +17308,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &288426490
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31032,7 +31050,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &474900507
 RectTransform:
   m_ObjectHideFlags: 0
@@ -45052,7 +45070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &849092403
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51127,7 +51145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &933747985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -51882,7 +51900,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Test Increase Player XP
+  m_text: Test Increase Player Win
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
   m_sharedMaterial: {fileID: 2830636965969884548, guid: 605433b68313d491a8ab88bc03a41651, type: 2}
@@ -52492,6 +52510,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data_challangeMission: {fileID: 0}
+  ui_challangeMission:
+  - Title_Icon: {fileID: 1766294062}
+    Title_text: {fileID: 912527014}
+    Desc_text: {fileID: 858948626}
+    slider: {fileID: 1948021981}
+    sliderText: {fileID: 547452561}
+    Reward_Icon: {fileID: 184152038}
+    Reward_text: {fileID: 581032722}
+    claimButton: {fileID: 1414765674}
+    claimedBanner: {fileID: 1306050598}
+  - Title_Icon: {fileID: 1899519381}
+    Title_text: {fileID: 739063133}
+    Desc_text: {fileID: 2134694760}
+    slider: {fileID: 1499580595}
+    sliderText: {fileID: 772334803}
+    Reward_Icon: {fileID: 1140759520}
+    Reward_text: {fileID: 284656691}
+    claimButton: {fileID: 1769338609}
+    claimedBanner: {fileID: 597466924}
+  - Title_Icon: {fileID: 2092246132}
+    Title_text: {fileID: 664065296}
+    Desc_text: {fileID: 697730205}
+    slider: {fileID: 996443106}
+    sliderText: {fileID: 251878586}
+    Reward_Icon: {fileID: 1311103996}
+    Reward_text: {fileID: 380156475}
+    claimButton: {fileID: 1364854142}
+    claimedBanner: {fileID: 534201254}
+  - Title_Icon: {fileID: 481684265}
+    Title_text: {fileID: 1998337174}
+    Desc_text: {fileID: 1891177013}
+    slider: {fileID: 1351737247}
+    sliderText: {fileID: 1047095365}
+    Reward_Icon: {fileID: 178031610}
+    Reward_text: {fileID: 1398631930}
+    claimButton: {fileID: 1217727069}
+    claimedBanner: {fileID: 73229465}
+  - Title_Icon: {fileID: 619332497}
+    Title_text: {fileID: 1908986615}
+    Desc_text: {fileID: 1555427773}
+    slider: {fileID: 1175559668}
+    sliderText: {fileID: 2059720403}
+    Reward_Icon: {fileID: 1224945328}
+    Reward_text: {fileID: 1678336776}
+    claimButton: {fileID: 418067234}
+    claimedBanner: {fileID: 1318411523}
 --- !u!1 &996443104
 GameObject:
   m_ObjectHideFlags: 0
@@ -53237,7 +53301,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1015371268
 RectTransform:
   m_ObjectHideFlags: 0
@@ -53654,6 +53718,7 @@ GameObject:
   - component: {fileID: 1029404711}
   - component: {fileID: 1029404713}
   - component: {fileID: 1029404712}
+  - component: {fileID: 1029404714}
   m_Layer: 5
   m_Name: List2
   m_TagString: Untagged
@@ -53726,6 +53791,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029404710}
   m_CullTransparentMesh: 0
+--- !u!114 &1029404714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029404710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27278fd3500d3540bb4489c33a55ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 1
+  claimButton: {fileID: 1769338609}
+  claimedBanner: {fileID: 597466924}
+  _missionRewardType: 0
+  _rewardType: 0
 --- !u!1 &1036821146
 GameObject:
   m_ObjectHideFlags: 0
@@ -54081,8 +54163,9 @@ GameObject:
   - component: {fileID: 1043434732}
   - component: {fileID: 1043434731}
   - component: {fileID: 1043434730}
+  - component: {fileID: 1043434733}
   m_Layer: 5
-  m_Name: Button_Stage
+  m_Name: Button_Test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54152,9 +54235,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2079061180}
-        m_TargetAssemblyTypeName: TD.gameeconomics.UI_PlayerLevelProgress, Assembly-CSharp
-        m_MethodName: TEST_AddXP
+      - m_Target: {fileID: 1043434733}
+        m_TargetAssemblyTypeName: TD.gameeconomics.Test, Assembly-CSharp
+        m_MethodName: Test_AddPlayerWINCount
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -54202,6 +54285,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1043434728}
   m_CullTransparentMesh: 0
+--- !u!114 &1043434733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043434728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee0d7af3e8291c0418c19fc313d89f49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1045597115
 GameObject:
   m_ObjectHideFlags: 0
@@ -61271,6 +61366,7 @@ GameObject:
   - component: {fileID: 1150434092}
   - component: {fileID: 1150434094}
   - component: {fileID: 1150434093}
+  - component: {fileID: 1150434095}
   m_Layer: 5
   m_Name: List3
   m_TagString: Untagged
@@ -61343,6 +61439,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1150434091}
   m_CullTransparentMesh: 0
+--- !u!114 &1150434095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150434091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27278fd3500d3540bb4489c33a55ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 2
+  claimButton: {fileID: 1364854142}
+  claimedBanner: {fileID: 534201254}
+  _missionRewardType: 0
+  _rewardType: 0
 --- !u!1 &1154171739
 GameObject:
   m_ObjectHideFlags: 0
@@ -68231,6 +68344,7 @@ GameObject:
   - component: {fileID: 1226259642}
   - component: {fileID: 1226259644}
   - component: {fileID: 1226259643}
+  - component: {fileID: 1226259645}
   m_Layer: 5
   m_Name: List5
   m_TagString: Untagged
@@ -68303,6 +68417,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226259641}
   m_CullTransparentMesh: 0
+--- !u!114 &1226259645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1226259641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27278fd3500d3540bb4489c33a55ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 4
+  claimButton: {fileID: 418067234}
+  claimedBanner: {fileID: 1318411523}
+  _missionRewardType: 0
+  _rewardType: 0
 --- !u!1 &1229058871
 GameObject:
   m_ObjectHideFlags: 0
@@ -71806,7 +71937,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1366315292
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74336,6 +74467,7 @@ GameObject:
   - component: {fileID: 1480493532}
   - component: {fileID: 1480493534}
   - component: {fileID: 1480493533}
+  - component: {fileID: 1480493535}
   m_Layer: 5
   m_Name: List4
   m_TagString: Untagged
@@ -74408,6 +74540,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480493531}
   m_CullTransparentMesh: 0
+--- !u!114 &1480493535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480493531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c27278fd3500d3540bb4489c33a55ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 3
+  claimButton: {fileID: 1217727069}
+  claimedBanner: {fileID: 73229465}
+  _missionRewardType: 0
+  _rewardType: 0
 --- !u!1 &1488501992
 GameObject:
   m_ObjectHideFlags: 0
@@ -81062,7 +81211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878554162185029276, guid: c17150ec98ab56845ae0f027d17f1190, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 7878554162185029276, guid: c17150ec98ab56845ae0f027d17f1190, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -81082,7 +81231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878554162356138130, guid: c17150ec98ab56845ae0f027d17f1190, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 848.5
       objectReference: {fileID: 0}
     - target: {fileID: 7878554162356138130, guid: c17150ec98ab56845ae0f027d17f1190, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -81210,7 +81359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878554163090726822, guid: c17150ec98ab56845ae0f027d17f1190, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 476.5
       objectReference: {fileID: 0}
     - target: {fileID: 7878554163090726822, guid: c17150ec98ab56845ae0f027d17f1190, type: 3}
       propertyPath: m_AnchoredPosition.y

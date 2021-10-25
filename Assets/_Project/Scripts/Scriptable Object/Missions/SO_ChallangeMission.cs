@@ -40,6 +40,7 @@ namespace TD.gameeconomics
 	    public Sprite challangeM_rewardIcon;
 	    public int challangeM_rewardCount;
 	    public MissionRewardType missionRewardType;
+	    public MissionType missionType;
     }
 
     public enum MissionRewardType
@@ -48,6 +49,15 @@ namespace TD.gameeconomics
 	    Gem,
 	    Energy,
 	    Chest
+    }
+
+    public enum MissionType
+    {
+	    PlayerWinCount,
+	    SeeAd,
+	    HeroCardUse,
+	    TopLeaderboard,
+	    WeaponCardUse
     }
     
     

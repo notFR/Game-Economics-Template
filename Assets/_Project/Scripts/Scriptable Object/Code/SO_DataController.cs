@@ -90,6 +90,7 @@ namespace TD.gameeconomics
 			{
 				inventorySystem = Resources.Load<SO_InventorySlotObject>("Scriptable Data/Inventory/Inventory System");
 			}
+			
 		}
 
 		private void OnEnable()
@@ -98,6 +99,13 @@ namespace TD.gameeconomics
 			CreatePlayerProgressDictionary();
 			CreateRewardItemDictionary();
 		}
+
+
+		private void Update()
+		{
+			AddDataForChallangeMission();
+		}
+
 
 		#region Player Progress
 		
@@ -202,6 +210,27 @@ namespace TD.gameeconomics
 			{
 				inventorySystem.AddItem(item, 1);
 			}
+		}
+
+		#endregion
+
+		#region AddPlayerStatisticsData
+
+		void AddDataForChallangeMission()
+		{
+			int index = PlayerPrefs.GetInt(GlobalData.challangeMission);
+			ChallangeMissionSO chMissionData = challangeMission_so.ChallangeMissionData[index];
+
+			foreach (var chData in chMissionData.missionData)
+			{
+				switch (chData.missionType)
+				{
+					case MissionType.PlayerWinCount:
+						chData.challangeM_currentCount = PlayerStatistics.GetPlayerWinCount();
+						break;
+				}
+			}
+			
 		}
 
 		#endregion

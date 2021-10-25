@@ -55,6 +55,9 @@ namespace TD.gameeconomics
 		
 		// Add Inventory Name
 		public static string normalChestName = "ChestNormal";
+		
+		//MISSION
+		public static string challangeMission = "ChallangeMission";
 
 	}
 }
