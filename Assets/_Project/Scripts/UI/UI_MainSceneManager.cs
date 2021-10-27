@@ -27,6 +27,11 @@ namespace TD.gameeconomics
 		[Space(10)] 
 		[SerializeField] private Button missionsButton;
 		[SerializeField] private Button missionsBackButton;
+		[Space(10)] 
+		[SerializeField] private Button weaponButton;
+		[SerializeField] private Button weaponBackButton;
+		
+		
 		
 		[Header("Player Info :")] 
 		[SerializeField] private TMP_Text playerUserName;
@@ -38,7 +43,7 @@ namespace TD.gameeconomics
 
 		private const string leaderboardPanel = "LeaderBoard Panel";
 		private const string missionsPanel = "Missions";
-		
+		private const string weaponPanel = "Weapon";
 
 		#endregion
 
@@ -119,6 +124,25 @@ namespace TD.gameeconomics
 			{
 				CloseMenu(missionsPanel);
 			});
+			
+			
+			//Weapon
+			
+			weaponButton.onClick.AddListener(() =>
+			{
+				ShowMenu(weaponPanel);
+			});
+			
+			weaponBackButton.onClick.AddListener(() =>
+			{
+				CloseMenu(weaponPanel);
+			});
+			
+			
+			
+			
+			
+			
 		}
 		
 		#region UI MANAGEMENT

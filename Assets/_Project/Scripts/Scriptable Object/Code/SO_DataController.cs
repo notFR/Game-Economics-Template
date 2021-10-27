@@ -53,6 +53,8 @@ namespace TD.gameeconomics
 		private SO_ChallangeMission challangeMission_so;
 		public SO_ChallangeMission ChallangeMissionData => challangeMission_so;
 		
+		// Weapon
+		public SO_WeaponContainer weaponC = null;
 		
 		#endregion
 
@@ -60,7 +62,10 @@ namespace TD.gameeconomics
 
 		void OnAwake()
 		{
-			
+			if (weaponC == null)
+			{
+				weaponC = Resources.Load<SO_WeaponContainer>("Scriptable Data/Weapon/weapon_container");
+			}
 		}
 
 		private void Start()

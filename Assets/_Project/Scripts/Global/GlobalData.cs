@@ -50,7 +50,6 @@ namespace TD.gameeconomics
 		// Inventory Button event
 		public static string sellButtonPress = "Sell Button Press";
 		public static string selectButtonPress = "Select Button Press";
-
 		public static string addItemInventory = "Add Item Inventory";
 		
 		// Add Inventory Name
@@ -58,6 +57,12 @@ namespace TD.gameeconomics
 		
 		//MISSION
 		public static string challangeMission = "ChallangeMission";
+		
+		//Weapon
+		public static string arrowLevel = "Arrow Level";
+		public static string axeLevel = "axe Level";
+		public static string hammerLevel = "hammer Level";
+		public static string bombLevel = "bomb Level";
 
 	}
 }
