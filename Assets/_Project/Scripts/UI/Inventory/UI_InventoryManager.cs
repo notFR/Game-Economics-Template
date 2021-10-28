@@ -94,6 +94,7 @@ namespace TD.gameeconomics
 			 
 			 CreateItemSlot();
 			 
+			 
 		}
 
 		private void OnEnable()

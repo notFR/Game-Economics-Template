@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4bb54bdd61476418c968422efed2d9, type: 3}
+  m_Name: Hammer
+  m_EditorClassIdentifier: 
+  weaponType: 3
+  ID: 3
+  uiObject: {fileID: 1033817158479884367, guid: a11ee9499f9e22f47acf5e3df261d823, type: 3}
+  weaponName: HAMMER
+  weaponDesc: 'Hit enemy.
+
+    Causing 15 damage against
+
+    every enemy'
+  damage: 15
+  attackRange: 12
+  specialityIcon:
+  - {fileID: 21300000, guid: 2629fe6e2a5ca4a00b77f80a4fa111d0, type: 3}
+  - {fileID: 21300000, guid: a23da39e100ba474f8c6ba3580b3cf5f, type: 3}
+  - {fileID: 21300000, guid: ca5ff82589a4a487cb8c8e59004514fa, type: 3}
+  weaponLevel:
+  - damagePoint: 1
+    attackPoint: 2
+    CoinToUpgrade: 1200
+  - damagePoint: 2
+    attackPoint: 3
+    CoinToUpgrade: 2500
+  - damagePoint: 3
+    attackPoint: 4
+    CoinToUpgrade: 5500
+  - damagePoint: 4
+    attackPoint: 5
+    CoinToUpgrade: 7500
+  - damagePoint: 5
+    attackPoint: 6
+    CoinToUpgrade: 8500

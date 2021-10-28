@@ -190,12 +190,17 @@ namespace TD.gameeconomics
 		}
 
 		#endregion
-		
-		
-		
-		
-		
-		
+
+
+		private void LateUpdate()
+		{
+			if (PlayerPrefs.GetInt(GlobalData.coin, 0) <= 0)
+			{
+				PlayerPrefs.SetInt(GlobalData.coin, 0);
+			}
+		}
+
+
 		public string ScoreShow(int Score)
 		{
 			float Scor = Score;
