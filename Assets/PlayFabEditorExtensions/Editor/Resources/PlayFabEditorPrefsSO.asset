@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
   m_Name: PlayFabEditorPrefsSO
   m_EditorClassIdentifier: 
-  DevAccountEmail: rabbi@tangerinedigital.net
-  DevAccountToken: 6g97rob8onmgdfw7uaffjgegmrigp5xthp4p4n6pt8y5yghubhwzxy88y91nnp7m461kmeb6c7scnfo5ngth74uui3yjzcwdx77ea61k18nf5czzx7ka46n13343c315s8z33aa85im1gr41tj4efppdhwx9ztcackz4utkogf4srmj9cqbzijketyfhywyhca9ndezp
-  SelectedStudio: Tangerine Digital
-  SdkPath: Assets/PlayFabSDK
+  DevAccountEmail: 
+  DevAccountToken: 
+  SelectedStudio: 
+  SdkPath: 
   EdExPath: 
   LocalCloudScriptPath: 
   PanelIsShown: 0
-  curMainMenuIdx: 1
+  curMainMenuIdx: 0
   curSubMenuIdx: 0
