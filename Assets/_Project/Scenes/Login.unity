@@ -1619,7 +1619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8943af5566c49cc4db562b42052172b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearPlayerPrefs: 1
+  clearPlayerPrefs: 0
   loginEmailButton: {fileID: 801902183}
   errorOKButton: {fileID: 943059084}
   LoginButton: {fileID: 144941579}
@@ -3082,6 +3082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _authenticationType: 0
+  weaponC: {fileID: 0}
 --- !u!4 &902823378
 Transform:
   m_ObjectHideFlags: 0

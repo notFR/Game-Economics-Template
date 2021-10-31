@@ -74,6 +74,7 @@ namespace TD.gameeconomics
 
 		private void Start()
 		{
+
 			// At start show auth panel
 			if (!_AuthService.RememberMe)
 			{
@@ -142,7 +143,8 @@ namespace TD.gameeconomics
 		{
 			if (SO_DataController.Singleton != null)
 			{
-				SO_DataController.Singleton._authenticationType = AuthenticationType.PlayfabServer;
+				PlayerPrefs.SetInt(GlobalData.AuthType, 1); // playfab Auth
+				SO_DataController.Singleton.SetAuthenticationType();
 			}
 
 			Debug.Log("Log In Success");

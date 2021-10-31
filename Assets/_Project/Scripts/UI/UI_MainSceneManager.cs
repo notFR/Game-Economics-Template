@@ -30,11 +30,9 @@ namespace TD.gameeconomics
 		[Space(10)] 
 		[SerializeField] private Button weaponButton;
 		[SerializeField] private Button weaponBackButton;
-		
-		
-		
-		[Header("Player Info :")] 
-		[SerializeField] private TMP_Text playerUserName;
+		[Space(10)] 
+		[SerializeField] private Button userStatButton;
+		[SerializeField] private Button userStatCancelButton;
 		
 		
 		[Header("UI Screen :")] 
@@ -44,6 +42,7 @@ namespace TD.gameeconomics
 		private const string leaderboardPanel = "LeaderBoard Panel";
 		private const string missionsPanel = "Missions";
 		private const string weaponPanel = "Weapon";
+		private const string userStatPanel = "UserStat";
 
 		#endregion
 
@@ -51,19 +50,6 @@ namespace TD.gameeconomics
 
 		private void Start()
 		{
-			//If Auth is Playfab Server
-			if (SO_DataController.Singleton != null && SO_DataController.Singleton._authenticationType == AuthenticationType.PlayfabServer)
-			{
-				if (String.IsNullOrEmpty(PlayerPrefs.GetString(GlobalData.playerUsername)) )
-				{
-					playerUserName.text = "Guest";
-				}
-				else
-				{
-					string username = PlayerPrefs.GetString(GlobalData.playerUsername);
-					playerUserName.text = username.ToString();
-				}
-			}
 			Init();
 		}
 
@@ -127,20 +113,30 @@ namespace TD.gameeconomics
 			
 			
 			//Weapon
-			
+			weaponButton.onClick.RemoveAllListeners();
 			weaponButton.onClick.AddListener(() =>
 			{
 				ShowMenu(weaponPanel);
 			});
 			
+			weaponBackButton.onClick.RemoveAllListeners();
 			weaponBackButton.onClick.AddListener(() =>
 			{
 				CloseMenu(weaponPanel);
 			});
 			
+			// User Stat
+			userStatButton.onClick.RemoveAllListeners();
+			userStatButton.onClick.AddListener(() =>
+			{
+				ShowMenu(userStatPanel);
+			});
 			
-			
-			
+			userStatCancelButton.onClick.RemoveAllListeners();
+			userStatCancelButton.onClick.AddListener(() =>
+			{
+				CloseMenu(userStatPanel);
+			});
 			
 			
 		}

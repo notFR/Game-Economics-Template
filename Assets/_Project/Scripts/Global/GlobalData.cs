@@ -63,6 +63,9 @@ namespace TD.gameeconomics
 		public static string axeLevel = "axe Level";
 		public static string hammerLevel = "hammer Level";
 		public static string bombLevel = "bomb Level";
-
+		
+		// Authentication
+		public static string AuthType = "AuthType"; // 0 = guest, 1 = playfab, 2 = facebook
+		
 	}
 }

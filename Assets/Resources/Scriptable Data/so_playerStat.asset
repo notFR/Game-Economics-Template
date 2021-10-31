@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
-  m_Name: PlayFabEditorPrefsSO
+  m_Script: {fileID: 11500000, guid: 65c969e7d78a4ad429a3096245072c88, type: 3}
+  m_Name: so_playerStat
   m_EditorClassIdentifier: 
-  DevAccountEmail: 
-  DevAccountToken: 
-  SelectedStudio: 
-  SdkPath: 
-  EdExPath: 
-  LocalCloudScriptPath: 
-  PanelIsShown: 0
-  curMainMenuIdx: 0
-  curSubMenuIdx: 0
+  _highestScore: 0
+  _highestStage: 0
+  _mostWins: 0
+  _soloVictories: 0
+  _duoVictories: 0
+  _3V3Victories: 0
+  _bossVictories: 0
+  _totalPlay: 0
+  _distroyDamage: 0
