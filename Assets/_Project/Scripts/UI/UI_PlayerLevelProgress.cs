@@ -15,7 +15,7 @@ namespace TD.gameeconomics
 		[Header(("UI :"))] 
 		[SerializeField] private TMP_Text playerLevelNumberText;
 		[SerializeField] private TMP_Text playerLevelXP;
-		[SerializeField] private Slider xpSlider;
+		[SerializeField] private TMP_Text userName;
 
 		
 
@@ -25,17 +25,29 @@ namespace TD.gameeconomics
 
 		private void Start()
 		{
-			//ShowPlayerProgress();
-
-			if (!PlayerPrefs.HasKey(GlobalData.playerXPSliderVal))
-			{
-				PlayerPrefs.SetFloat(GlobalData.playerXPSliderVal, 0);
-			}
+			
+			
+			
 			
 		}
 
 		private void OnEnable()
 		{
+			//If Auth is Playfab Server
+			if (SO_DataController.Singleton != null && SO_DataController.Singleton._authenticationType == AuthenticationType.PlayfabServer)
+			{
+				if (String.IsNullOrEmpty(PlayerPrefs.GetString(GlobalData.playerUsername)) )
+				{
+					userName.text = "Guest";
+				}
+				else
+				{
+					string username = PlayerPrefs.GetString(GlobalData.playerUsername);
+					userName.text = username.ToString();
+				}
+			}
+			
+			
 			ShowPlayerProgress();
 			//XPSlider(PlayerPrefs.GetFloat(GlobalData.playerXPSliderVal, 0));
 			EventManager.StartListening(GlobalData.SetPlayerCurrentXP, AddPlayerCurrentXP);
@@ -64,18 +76,18 @@ namespace TD.gameeconomics
 			
 		}
 
-		void XPSlider(float val)
-		{
-			PlayerPrefs.SetFloat(GlobalData.playerXPSliderVal, val);
-			xpSlider.value = val;
-			// if (!PlayerPrefs.HasKey("cacheSliderVal"))
-			// {
-			// 	PlayerPrefs.SetFloat("cacheSliderVal", 0);
-			// }
-			//
-			// float startVal = PlayerPrefs.GetFloat("cacheSliderVal", 0);
-			// StartCoroutine(LerpSlider(2f, startVal, val));
-		}
+		// void XPSlider(float val)
+		// {
+		// 	//PlayerPrefs.SetFloat(GlobalData.playerXPSliderVal, val);
+		// 	//xpSlider.value = val;
+		// 	// if (!PlayerPrefs.HasKey("cacheSliderVal"))
+		// 	// {
+		// 	// 	PlayerPrefs.SetFloat("cacheSliderVal", 0);
+		// 	// }
+		// 	//
+		// 	// float startVal = PlayerPrefs.GetFloat("cacheSliderVal", 0);
+		// 	// StartCoroutine(LerpSlider(2f, startVal, val));
+		// }
 		
 		
 		// IEnumerator LerpSlider(float lerpDuration, float startValue, float endValue)

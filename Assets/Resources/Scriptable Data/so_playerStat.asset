@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65c969e7d78a4ad429a3096245072c88, type: 3}
+  m_Name: so_playerStat
+  m_EditorClassIdentifier: 
+  _highestScore: 16165
+  _highestStage: 120
+  _mostWins: 144
+  _soloVictories: 66
+  _duoVictories: 45
+  _3V3Victories: 3
+  _bossVictories: 70
+  _totalPlay: 378
+  _distroyDamage: 10444

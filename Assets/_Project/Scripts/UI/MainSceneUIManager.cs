@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using FXnRXn.Manager;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 namespace TD.gameeconomics
 {
@@ -21,8 +22,8 @@ namespace TD.gameeconomics
 
 		[Header("UI Screen :")] 
 		[SerializeField]private List<UI_Screen> _UIMenus;
-		
-		
+
+		private RewardWeekManager _rewardWeekManager;
 
 		#endregion
 
@@ -36,7 +37,7 @@ namespace TD.gameeconomics
 
 		void Init()
 		{
-			
+			_rewardWeekManager = Object.FindObjectOfType<RewardWeekManager>().GetComponent<RewardWeekManager>();
 		}
 
 		private void OnEnable()
@@ -87,6 +88,11 @@ namespace TD.gameeconomics
 				EventManager.TriggerEvent(GlobalData.gemAdd, 5);
 				EventManager.TriggerEvent(GlobalData.firstRewardClaimComplete);
 				PlayerPrefs.SetInt(GlobalData.firstTimeSignInAward, 1);
+				this.Wait(0.5f, () =>
+				{
+					_rewardWeekManager.StartRewardWeek();
+				});
+				
 			});
 
 		}

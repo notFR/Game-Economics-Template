@@ -54,7 +54,13 @@ namespace TD.gameeconomics
 		public SO_ChallangeMission ChallangeMissionData => challangeMission_so;
 		
 		// Weapon
-		public SO_WeaponContainer weaponC = null;
+		[HideInInspector] public SO_WeaponContainer weaponC = null;
+		
+		// Player Stat
+		[HideInInspector] public SO_PlayerStatInfo playerStat = null;
+		
+		// Reward Week
+		[HideInInspector] public SO_RewardWeek rewardWeek = null;
 		
 		#endregion
 
@@ -66,10 +72,45 @@ namespace TD.gameeconomics
 			{
 				weaponC = Resources.Load<SO_WeaponContainer>("Scriptable Data/Weapon/weapon_container");
 			}
+
+			if (playerStat == null)
+			{
+				playerStat = Resources.Load<SO_PlayerStatInfo>("Scriptable Data/so_playerStat");
+			}
+
+			if (rewardWeek == null)
+			{
+				rewardWeek = Resources.Load<SO_RewardWeek>("Scriptable Data/so_rewardWeekData");
+			}
+
+			SetAuthenticationType();
+
 		}
+
+
+		public void SetAuthenticationType()
+		{
+			switch (PlayerPrefs.GetInt(GlobalData.AuthType))
+			{
+				case 0:
+					_authenticationType = AuthenticationType.Default;
+					break;
+				case 1:
+					_authenticationType = AuthenticationType.PlayfabServer;
+					break;
+				case 2:
+					_authenticationType = AuthenticationType.Facebook;
+					break;
+			}
+		}
+		
+		
+		
 
 		private void Start()
 		{
+			
+			
 			if (playerProgressDataDictionary == null)
 			{
 				CreatePlayerProgressDictionary();

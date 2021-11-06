@@ -105,7 +105,7 @@ namespace TD.gameeconomics
 		}
 		
 
-		public void Update()
+		public void FixedUpdate()
 		{
 			_energyText.text = GameCoinGemEnergyCount.GetEnergyCount().ToString();
 			_coinText.text = GameCoinGemEnergyCount.GetCoinCount().ToString();
