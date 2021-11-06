@@ -59,6 +59,9 @@ namespace TD.gameeconomics
 		// Player Stat
 		[HideInInspector] public SO_PlayerStatInfo playerStat = null;
 		
+		// Reward Week
+		[HideInInspector] public SO_RewardWeek rewardWeek = null;
+		
 		#endregion
 
 		#region Functions
@@ -73,6 +76,11 @@ namespace TD.gameeconomics
 			if (playerStat == null)
 			{
 				playerStat = Resources.Load<SO_PlayerStatInfo>("Scriptable Data/so_playerStat");
+			}
+
+			if (rewardWeek == null)
+			{
+				rewardWeek = Resources.Load<SO_RewardWeek>("Scriptable Data/so_rewardWeekData");
 			}
 
 			SetAuthenticationType();

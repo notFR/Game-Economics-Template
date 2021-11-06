@@ -58,6 +58,9 @@ namespace TD.gameeconomics
 		//MISSION
 		public static string challangeMission = "ChallangeMission";
 		
+		// Reward Week
+		public static string RewardWeek = "Reward Week";
+		
 		//Weapon
 		public static string arrowLevel = "Arrow Level";
 		public static string axeLevel = "axe Level";

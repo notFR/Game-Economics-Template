@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74abdd569b7a1345b0b0592fa45960e, type: 3}
+  m_Name: so_rewardWeekData
+  m_EditorClassIdentifier: 
+  rewardWeekDatas:
+  - allClaimed: 0
+    isLocked: 1
+    readytoclaim: 0
+    isclaimed: 0
+    rewardSprite: {fileID: 21300000, guid: 03911bb6df5894a4ca4b5543901dc0e8, type: 3}
+    amount: 1
+    chest: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    weekDatas:
+    - isLocked: 0
+      readytoclaim: 1
+      isclaimed: 0
+      type: 0
+      rewardSprite: {fileID: 21300000, guid: ffe128a5f047f43d9a494e099634504e, type: 3}
+      amount: 500
+      chest: {fileID: 0}
+    - isLocked: 1
+      readytoclaim: 0
+      isclaimed: 0
+      type: 1
+      rewardSprite: {fileID: 21300000, guid: 2a395c4f5dd914dd2b50468e92772309, type: 3}
+      amount: 5
+      chest: {fileID: 0}
+    - isLocked: 1
+      readytoclaim: 0
+      isclaimed: 0
+      type: 2
+      rewardSprite: {fileID: 21300000, guid: f434a60f1f85c47e085d09cab598d63d, type: 3}
+      amount: 5
+      chest: {fileID: 0}
+    - isLocked: 1
+      readytoclaim: 0
+      isclaimed: 0
+      type: 3
+      rewardSprite: {fileID: 21300000, guid: d74df393288c94e0e8791c98c247f31e, type: 3}
+      amount: 1
+      chest: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - isLocked: 1
+      readytoclaim: 0
+      isclaimed: 0
+      type: 0
+      rewardSprite: {fileID: 21300000, guid: ffe128a5f047f43d9a494e099634504e, type: 3}
+      amount: 1000
+      chest: {fileID: 0}
+    - isLocked: 1
+      readytoclaim: 0
+      isclaimed: 0
+      type: 2
+      rewardSprite: {fileID: 21300000, guid: f434a60f1f85c47e085d09cab598d63d, type: 3}
+      amount: 7
+      chest: {fileID: 0}

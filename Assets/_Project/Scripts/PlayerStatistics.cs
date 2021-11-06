@@ -28,8 +28,6 @@ namespace TD.gameeconomics
         #region Player Info Data
 
         
-
-
         public static void SetHighestStage(int val)
         {
             int hStage;
