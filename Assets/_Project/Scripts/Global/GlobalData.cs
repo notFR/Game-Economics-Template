@@ -61,6 +61,9 @@ namespace TD.gameeconomics
 		// Reward Week
 		public static string RewardWeek = "Reward Week";
 		
+		// Spin Wheel
+		public static string spinWheel = "Spin Wheel";
+		
 		//Weapon
 		public static string arrowLevel = "Arrow Level";
 		public static string axeLevel = "axe Level";

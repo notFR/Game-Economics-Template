@@ -33,6 +33,9 @@ namespace TD.gameeconomics
 		[Space(10)] 
 		[SerializeField] private Button userStatButton;
 		[SerializeField] private Button userStatCancelButton;
+		[Space(10)] 
+		[SerializeField] private Button spinWheelOpenButton;
+		[SerializeField] private Button spinWheelCloseButton;
 		
 		
 		[Header("UI Screen :")] 
@@ -43,6 +46,8 @@ namespace TD.gameeconomics
 		private const string missionsPanel = "Missions";
 		private const string weaponPanel = "Weapon";
 		private const string userStatPanel = "UserStat";
+		private const string spinWheelPanel = "Lucky Spin";
+		
 
 		#endregion
 
@@ -136,6 +141,19 @@ namespace TD.gameeconomics
 			userStatCancelButton.onClick.AddListener(() =>
 			{
 				CloseMenu(userStatPanel);
+			});
+			
+			// Spin Wheel
+			spinWheelOpenButton.onClick.RemoveAllListeners();
+			spinWheelOpenButton.onClick.AddListener(() =>
+			{
+				ShowMenu(spinWheelPanel);
+			});
+			
+			spinWheelCloseButton.onClick.RemoveAllListeners();
+			spinWheelCloseButton.onClick.AddListener(() =>
+			{
+				CloseMenu(spinWheelPanel);
 			});
 			
 			

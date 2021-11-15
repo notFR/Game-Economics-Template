@@ -18,7 +18,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Scriptable Object/Weapon/SO_Weapon.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/UI/Missions/UI_ChallangeMissionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/PlayerStatistics.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Scriptable Object/SO_SpinWheelData.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Manager/RewardWeekManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Manager/SpinWheelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/_Project/Scripts/Scriptable Object/SO_PlayerStatInfo.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zfMW2wchNNMO5gNJEUuqxKEcxp" />
@@ -79,6 +81,11 @@
       <workItem from="1635935046170" duration="3802000" />
       <workItem from="1636014093054" duration="4025000" />
       <workItem from="1636170776318" duration="1040000" />
+      <workItem from="1636190737936" duration="104000" />
+      <workItem from="1636190861476" duration="2045000" />
+      <workItem from="1636258072668" duration="463000" />
+      <workItem from="1636258722478" duration="7084000" />
+      <workItem from="1636951210273" duration="8305000" />
     </task>
     <servers />
   </component>

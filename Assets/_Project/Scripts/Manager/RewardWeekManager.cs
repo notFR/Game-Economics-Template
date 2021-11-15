@@ -13,6 +13,7 @@ namespace TD.gameeconomics
     {
 	#region Variable
 
+	
 	private string url = "www.google.com";
 	private string urlDate = "http://worldclockapi.com/api/json/est/now";
 	private string sDate = "";
@@ -62,19 +63,17 @@ namespace TD.gameeconomics
 			PlayerPrefs.SetInt(GlobalData.RewardWeek, 0);
 		}
 		
-		if (PlayerPrefs.GetInt(GlobalData.firstTimeSignInAward) == 1)
-		{
-			StartCoroutine(CheckInternet());
-		}
-		
-		
-
+		//  --------------------------------------------------
 		ResetUI();
 
 		UpgradeRewardDaily();
 
 		ButtonPress();
 		
+		if (PlayerPrefs.GetInt(GlobalData.firstTimeSignInAward) == 1)
+		{
+			StartCoroutine(CheckInternet());
+		}
 	}
 
 	private void OnEnable()
@@ -126,9 +125,6 @@ namespace TD.gameeconomics
 		DailyCheck();
 	}
 	
-	
-	
-	
 	void DailyCheck()
 	{
 		int index = PlayerPrefs.GetInt(GlobalData.RewardWeek, 0);
@@ -136,11 +132,10 @@ namespace TD.gameeconomics
 
 		if (string.IsNullOrEmpty(dateOld) && !_rewardWeek.rewardWeekDatas[index].weekDatas[0].isclaimed) // Day 1
 		{
+			ResetUI();
 			// DONE : First Game
 			// DONE : First Reward
 
-			Debug.Log("1");
-			
 			RewardButtonReady(0);
 			PlayerPrefs.SetString("PlayDateOld", sDate);
 			EventManager.TriggerEvent("OpenWeekRewardPanel");
@@ -155,7 +150,7 @@ namespace TD.gameeconomics
 
 			TimeSpan diff = _dateNow.Subtract(_dateOld);
 			
-			Debug.Log("other day" + _dateOld + " == " + _dateNow + " diff = "+ diff.Days);
+			//Debug.Log("other day" + _dateOld + " == " + _dateNow + " diff = "+ diff.Days);
 			if (diff.Days >= 1 && !_rewardWeek.rewardWeekDatas[index].weekDatas[1].isclaimed)// Day 2
 			{
 				RewardButtonReady(1);
@@ -197,6 +192,10 @@ namespace TD.gameeconomics
 			{
 				int temp = PlayerPrefs.GetInt(GlobalData.RewardWeek, 0) + 1;
 				PlayerPrefs.SetInt(GlobalData.RewardWeek, temp);
+				
+				int tempspinWheel = PlayerPrefs.GetInt(GlobalData.spinWheel, 0) + 1;
+				PlayerPrefs.SetInt(GlobalData.spinWheel, tempspinWheel);
+				
 				ResetUI();
 				// TODO : Delete date Playerprefs
 				PlayerPrefs.DeleteKey("PlayDateOld");
@@ -341,6 +340,10 @@ namespace TD.gameeconomics
 			{
 				int temp = PlayerPrefs.GetInt(GlobalData.RewardWeek, 0) + 1;
 				PlayerPrefs.SetInt(GlobalData.RewardWeek, temp);
+				
+				int tempspinWheel = PlayerPrefs.GetInt(GlobalData.spinWheel, 0) + 1;
+				PlayerPrefs.SetInt(GlobalData.spinWheel, tempspinWheel);
+				
 				ResetUI();
 				// TODO : Delete date Playerprefs
 			}

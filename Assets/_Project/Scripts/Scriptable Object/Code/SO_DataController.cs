@@ -62,6 +62,9 @@ namespace TD.gameeconomics
 		// Reward Week
 		[HideInInspector] public SO_RewardWeek rewardWeek = null;
 		
+		//Spin Wheel
+		[HideInInspector] public SO_SpinWheelData spinWheel = null;
+		
 		#endregion
 
 		#region Functions
@@ -81,6 +84,11 @@ namespace TD.gameeconomics
 			if (rewardWeek == null)
 			{
 				rewardWeek = Resources.Load<SO_RewardWeek>("Scriptable Data/so_rewardWeekData");
+			}
+
+			if (spinWheel == null)
+			{
+				spinWheel = Resources.Load<SO_SpinWheelData>("Scriptable Data/so_spinWheelData");
 			}
 
 			SetAuthenticationType();

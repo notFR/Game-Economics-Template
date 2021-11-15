@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf5c680bc907124899ff41da03f1b5f, type: 3}
+  m_Name: so_spinWheelData
+  m_EditorClassIdentifier: 
+  dailySpinCountTo: 0
+  dailySpinCountToMax: 10
+  spinWheelDatas:
+  - spinWheelData:
+    - _spinType: 0
+      Icon: {fileID: 21300000, guid: 3fb23bf6552b44aafb168ed0584e1641, type: 3}
+      count: 100
+      chest: {fileID: 0}
+    - _spinType: 2
+      Icon: {fileID: 21300000, guid: 5dfb16ae0220748c98c6d5ab5220b70a, type: 3}
+      count: 10
+      chest: {fileID: 0}
+    - _spinType: 1
+      Icon: {fileID: 21300000, guid: 2a395c4f5dd914dd2b50468e92772309, type: 3}
+      count: 5
+      chest: {fileID: 0}
+    - _spinType: 4
+      Icon: {fileID: 21300000, guid: 7f5077902f34e4dcda6e69df4ced83a7, type: 3}
+      count: 1
+      chest: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - _spinType: 4
+      Icon: {fileID: 21300000, guid: cbbde3a9c76824ecebc95880f93013b0, type: 3}
+      count: 1
+      chest: {fileID: 11400000, guid: 707cda73faa5c364eb5716a850d5343c, type: 2}
+    - _spinType: 0
+      Icon: {fileID: 21300000, guid: 3fb23bf6552b44aafb168ed0584e1641, type: 3}
+      count: 50
+      chest: {fileID: 0}
+    - _spinType: 1
+      Icon: {fileID: 21300000, guid: 2a395c4f5dd914dd2b50468e92772309, type: 3}
+      count: 7
+      chest: {fileID: 0}
+    - _spinType: 2
+      Icon: {fileID: 21300000, guid: 5dfb16ae0220748c98c6d5ab5220b70a, type: 3}
+      count: 12
+      chest: {fileID: 0}
+  - spinWheelData:
+    - _spinType: 4
+      Icon: {fileID: 21300000, guid: 98663b0033e5347c1a470a40f89f1f10, type: 3}
+      count: 1
+      chest: {fileID: 11400000, guid: 707cda73faa5c364eb5716a850d5343c, type: 2}
+    - _spinType: 4
+      Icon: {fileID: 21300000, guid: 19240fc7d616b42f096d2bf1fede1d39, type: 3}
+      count: 1
+      chest: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - _spinType: 0
+      Icon: {fileID: 21300000, guid: 3fb23bf6552b44aafb168ed0584e1641, type: 3}
+      count: 100
+      chest: {fileID: 0}
+    - _spinType: 2
+      Icon: {fileID: 21300000, guid: 5dfb16ae0220748c98c6d5ab5220b70a, type: 3}
+      count: 10
+      chest: {fileID: 0}
+    - _spinType: 4
+      Icon: {fileID: 21300000, guid: 768bd451ab2124c98924895f104d3dce, type: 3}
+      count: 1
+      chest: {fileID: 11400000, guid: e00adb8d985e69241b86b46051c93457, type: 2}
+    - _spinType: 0
+      Icon: {fileID: 21300000, guid: 3fb23bf6552b44aafb168ed0584e1641, type: 3}
+      count: 50
+      chest: {fileID: 0}
+    - _spinType: 1
+      Icon: {fileID: 21300000, guid: 2a395c4f5dd914dd2b50468e92772309, type: 3}
+      count: 8
+      chest: {fileID: 0}
+    - _spinType: 2
+      Icon: {fileID: 21300000, guid: 5dfb16ae0220748c98c6d5ab5220b70a, type: 3}
+      count: 14
+      chest: {fileID: 0}
